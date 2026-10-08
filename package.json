@@ -7,7 +7,7 @@
     "test": "playwright test",
     "test:ui": "playwright test tests/ui",
     "test:api": "playwright test tests/api",
-    "report": "npx allure generate ./allure-results --clean && npx allure open ./allure-report"
+    "report": "allure generate ./allure-results --clean && allure open ./allure-report"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
   "devDependencies": {
     "@playwright/test": "^1.64.0",
     "@types/node": "^26.6.4",
+    "allure-commandline": "^2.46.1",
     "allure-playwright": "^3.13.0",
     "typescript": "^7.0.2"
   }
